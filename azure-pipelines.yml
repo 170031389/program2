@@ -5,15 +5,11 @@
 
 trigger:
 - master
-
 pool:
   vmImage: 'ubuntu-latest'
-
 steps:
-# Maven
 - task: CmdLine@2
   inputs:
     script: |
-      javac  MyFirstJavaProgram.java
-      
-      java MyFirstJavaProgram
+      javac AddTwoNumbers.java
+      java AddTwoNumbers
